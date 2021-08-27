@@ -9,40 +9,50 @@
 </head>
 <body>
   <div class="container">
+    <div class="jumbotron">
+      <div class="header">
+        <h1>Epicodus Epizzaria</h1>
+      </div>
+    </div>
     <form id="PizzaSelection">
-      <h1>Epicodus Epizzaria</h1>
       <p>
         <h3> Enter your contact details</h3>
         Name: <input name="name" type="text">
         Address: <input name="address" type="text">
         Phone Number: <input name="number" type="text">
       </p>
-      <p>
-        <h3>Select your crust size</h3>
-        <input name="personal" class="crust" type="radio"> Personal
-        <input name="medium" class="crust" type="radio"> Medium
-        <input name="large" class="crust" type="radio"> Large
-      </p>
-      <p>
-        <h3>Select how saucy you want to be</h3>
-        <input name="robust red" class="sauce" type="radio"> Robust Red
-        <input name="vodka" class="sauce" type="radio"> Vodka
-        <input name="white sauce" class="sauce" type="radio"> White Sauce
-        <input name="no sauce" class="sauce" type="radio"> No Sauce
-      </p>
-      <p>
-        <h3>Select your toppings</h3>
-        <input name="pepperoni" class="toppings" type="checkbox">Pepperoni
-        <input name="sausage" class="toppings" type="checkbox">Sausage
-        <input name="chicken" class="toppings" type="checkbox">Chicken
-        <input name="olives"  class="toppings" type="checkbox">Olives
-        <input name="artichoke" class="toppings" type="checkbox">Artichoke
-        <input name="spinach" class="toppings" type="checkbox">Spinach
-        <input name="peppers"  class="toppings" type="checkbox">Peppers
-        <input name="onions"  class="toppings" type="checkbox">Onions
-        <input name="anchovy"  class="toppings" type="checkbox">Anchovy
-        <input name="extra cheese"  class="toppings" type="checkbox">extra cheese
-      </p>
+      <div id="crust">
+        <p>
+          <h3>Select your crust size</h3>
+          <input name="personal" class="crust" type="radio" value="5"> Personal
+          <input name="medium" class="crust" type="radio" value="10"> Medium
+          <input name="large" class="crust" type="radio" value="15"> Large
+        </p>
+      </div>
+      <div id="sauce">
+        <p>
+          <h3>Select how saucy you want to be</h3>
+          <input name="robust red" class="sauce" type="radio" value="2"> Robust Red
+          <input name="vodka" class="sauce" type="radio" value="4"> Vodka
+          <input name="white sauce" class="sauce" type="radio" value="4"> White Sauce
+          <input name="no sauce" class="sauce" type="radio" value="0"> No Sauce
+        </p>
+      </div>
+      <div id="toppings">
+        <p>
+          <h3>Select your toppings</h3>
+          <input name="pepperoni" class="toppings" type="checkbox" value="1">Pepperoni
+          <input name="sausage" class="toppings" type="checkbox" value="2">Sausage
+          <input name="chicken" class="toppings" type="checkbox" value="2">Chicken
+          <input name="olives"  class="toppings" type="checkbox" value="1">Olives
+          <input name="artichoke" class="toppings" type="checkbox" value="1">Artichoke
+          <input name="spinach" class="toppings" type="checkbox" value="1">Spinach
+          <input name="peppers"  class="toppings" type="checkbox" value="1">Peppers
+          <input name="onions"  class="toppings" type="checkbox" value="1">Onions
+          <input name="anchovy"  class="toppings" type="checkbox" value="2">Anchovy
+          <input name="extra cheese"  class="toppings" type="checkbox" value="2">extra cheese
+        </p>
+      </div>
       <button type="submit">Complete Order</button>
     </form>
     <div id ="orderInput">
