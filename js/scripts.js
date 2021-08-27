@@ -30,6 +30,15 @@ if (this.toppings.length !=0) {
 
 Pie.prototype.comboCost = function (crustTotal, toppingsTotal) {
   let totalCost= crustTotal + toppingsTotal;
-  $(this.#displayTotalCost).html(totalCost);
+  $(this.#showTotalCost).html(totalCost);
 }
 
+// UI Logic
+
+$(document).ready(function() {
+  $("#PizzaSelection").submit(function(event){
+    event.preventDefault();
+    $(this.#orderInput).show();
+
+  })
+})

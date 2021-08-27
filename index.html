@@ -9,7 +9,7 @@
 </head>
 <body>
   <div class="container">
-    <form name="PizzaSelection">
+    <form id="PizzaSelection">
       <h1>Epicodus Epizzaria</h1>
       <p>
         <h3> Enter your contact details</h3>
@@ -19,38 +19,35 @@
       </p>
       <p>
         <h3>Select your crust size</h3>
-        <input name="crust" type="radio"> Personal
-        <input name="crust" type="radio"> Medium
-        <input name="crust" type="radio"> Large
+        <input name="personal" class="crust" type="radio"> Personal
+        <input name="medium" class="crust" type="radio"> Medium
+        <input name="large" class="crust" type="radio"> Large
       </p>
       <p>
         <h3>Select how saucy you want to be</h3>
-        <input name="sauce" type="radio"> Robust Red
-        <input name="sauce" type="radio"> Vodka
-        <input name="sauce" type="radio"> White Sauce
-        <input name="sauce" type="radio"> No Sauce
+        <input name="robust red" class="sauce" type="radio"> Robust Red
+        <input name="vodka" class="sauce" type="radio"> Vodka
+        <input name="white sauce" class="sauce" type="radio"> White Sauce
+        <input name="no sauce" class="sauce" type="radio"> No Sauce
       </p>
       <p>
         <h3>Select your toppings</h3>
-        <input name="toppings" type="checkbox">Pepperoni
-        <input name="toppings" type="checkbox">Sausage
-        <input name="toppings" type="checkbox">Chicken
-        <input name="toppings" type="checkbox">Olives
-        <input name="toppings" type="checkbox">Artichoke
-        <input name="toppings" type="checkbox">Spinach
-        <input name="toppings" type="checkbox">Peppers
-        <input name="toppings" type="checkbox">Onions
-        <input name="toppings" type="checkbox">Anchovy
-        <input name="toppings" type="checkbox">extra cheese
+        <input name="pepperoni" class="toppings" type="checkbox">Pepperoni
+        <input name="sausage" class="toppings" type="checkbox">Sausage
+        <input name="chicken" class="toppings" type="checkbox">Chicken
+        <input name="olives"  class="toppings" type="checkbox">Olives
+        <input name="artichoke" class="toppings" type="checkbox">Artichoke
+        <input name="spinach" class="toppings" type="checkbox">Spinach
+        <input name="peppers"  class="toppings" type="checkbox">Peppers
+        <input name="onions"  class="toppings" type="checkbox">Onions
+        <input name="anchovy"  class="toppings" type="checkbox">Anchovy
+        <input name="extra cheese"  class="toppings" type="checkbox">extra cheese
       </p>
       <button type="submit">Complete Order</button>
     </form>
-    <div class ="Order confirmation">
-      <p>Your Details and total are:
-        Name: <span id="displayName"></span>
-        Address: <span id="displayAddress"></span>
-        Phone Number: <span id="displayNumber"></span>
-        Total: <span id="displayTotalCost"></span>
+    <div id ="orderInput">
+      <p>
+        Total: <span id="showTotalCost"></span>
       </p>
     </div>
   </div>

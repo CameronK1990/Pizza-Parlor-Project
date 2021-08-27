@@ -14,7 +14,10 @@
 ## Description
 
 _TEST 1_
-_Description: Create 1 Pizza object with a customizable value_
+_Description: Create 1 Pizza object with properties_
+_TEST: PASS_
+
+_TEST2_
 
 ## Setup/Installation Requirements
 
