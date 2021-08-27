@@ -1,16 +1,17 @@
 //Business Logic
 
-class pie {
-  pieStyle (crust, sauce, toppings,) {
+
+class pieStyle {
+  constructor(crust, sauce, toppings) {
     this.crust = crust;
     this.sauce = sauce;
     this.toppings = toppings;
   }
+  totalCost() {
+    return (crust + sauce + toppings);
+  }
 }
 
-pie.prototype.totalCost = function (crust, sauce, toppings) {
-  return (crust + sauce + toppings)
-}
 //Pie.prototype.crust = function() {
 //  if (this.crust === "Personal") {
 //    return 6;
@@ -44,7 +45,8 @@ $(document).ready(function() {
     let crust = parseInt($("input:radio[class = crust]:checked").val());
     let sauce = parseInt($("input:radio[class = sauce]:checked").val());
     let toppings = parseInt($("input:checkbox[class = toppings]:checked").val());
-    let costTotal = totalCost(crust,sauce,toppings,)
+    let costTotal = crust+sauce+toppings;
+    alert (costTotal);
 
-  })
-})
+  });
+});
