@@ -47,6 +47,6 @@ $(document).ready(function() {
     let toppings = parseInt($("input:checkbox[class = toppings]:checked").val());
     let costTotal = crust+sauce+toppings;
     alert (costTotal);
-
+    ////change alert, assign to html ID to push result once backend is worked out******
   });
 });
