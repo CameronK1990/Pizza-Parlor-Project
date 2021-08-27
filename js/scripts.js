@@ -9,3 +9,4 @@ class Pizza {
     this.toppings = toppings;
   }
 }
+
