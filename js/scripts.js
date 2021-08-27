@@ -22,7 +22,7 @@ pie.prototype.totalCost = function (crust, sauce, toppings) {
 //    alert ("Select a size");
 //  }
 //}
-
+//
 //Pie.prototype.toppings = function () {
 //if (this.toppings.length !=0) {
 //   let toppingsTotal = this.toppings.length *1;return toppingsTotal;
@@ -44,7 +44,7 @@ $(document).ready(function() {
     let crust = parseInt($("input:radio[class = crust]:checked").val());
     let sauce = parseInt($("input:radio[class = sauce]:checked").val());
     let toppings = parseInt($("input:checkbox[class = toppings]:checked").val());
-    let totalCost = add(crust,sauce,toppings,)
-    
+    let costTotal = totalCost(crust,sauce,toppings,)
+
   })
 })
